@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup {
+    position: absolute;
+    width: 100px;
+    border: solid black 1px;
+    background-color: white;
+    padding: 10px;
+    right: 0;
+    margin-top: 5px;
+    display: none;
+    border-radius: 10px;
+}
+
+.mylearning:hover .mylearning__popup {
+    display: block;
+}
+
+.navbar__logo__title {
+    color: #a435f0;
+    font-size: 35px;
+}
+
+.navbar__search {
+    border: solid black 1px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+
+}
+
+.navbar__search input {
+    border: none;
+    width: 100%;
+    gap: 20px;
+    font-size: 15px;
+    background: transparent;
+    margin-left: 10px;
+}
+
+.navbar__search input:focus {
+    outline: none;
+}
+
+.navbar__icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-humburger {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.catagories {
+    display: flex;
+    border-bottom: solid black 1px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.catagories p {
+    background-color: #b565ea;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+.catagories p:hover {
+    background-color: #bbb8bd;
+    transition: 0.5s;
+    color: black;
+    border: solid black 1px;
+}
+
+.sale__image {
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.sale__image img {
+    width: 100%;
+}
+
+.sale__image__offer {
+    width: 25%;
+    border: solid black 1px;
+    padding: 30px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: white;
+    animation-name: bounce;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+.sale__image__btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #b565ea;
+    border: none;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sale__image__btn:hover {
+    background-color: #e7d4f4;
+    color: black;
+    transition: 0.2s;
+}
+
+
+
+.recommended {
+    padding: 20px;
+
+}
+
+.recommended__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.course__card {
+    width: 280px;
+    box-shadow: 2px 2px 8px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.course__card img {
+    width: 100%;
+    height: 60%;
+}
+
+.topics {
+    padding: 20px;
+}
+
+.topics__cointainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics__cointainer p {
+    border: solid gray 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.popular {
+    padding: 20px;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__one p {
+    margin: 20px;
+}
+
+.footer__two {
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__two h1 {
+    color: #a435f0;
+    font-size: 35px;
+}
+
+/*media quries*/
+@media screen and(max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    .sale__image {
+        width: 160%;
+        height: 100%;
+        font-size: 11px;
+         object-fit: cover;
+
+    }
+
+  
+
+    .sale__image__offer {
+        width: 40%;
+        height: 48%;
+    }
+
+    .sale__image__btn {
+        width: 45%;
+       padding: 4px;
+
+    }
+
+    .catagories,
+    .navbar__search,
+    .navbar__icon {
+        display: none;
+    }
+
+    .nav-humburger {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .popular__container, .recommended__container{
+        justify-content: space-around; 
+        gap: 20px;
+    }
+    
+    .recommended__title{
+      text-align: center;
+      font-size: 30px;
+    }
+    .recommended__subtitle{
+            margin-bottom: 20px;
+            text-align: center;
+    }
+  .popular__title, .popular__subtitle{
+    text-align: center;
+  }
+
+}
