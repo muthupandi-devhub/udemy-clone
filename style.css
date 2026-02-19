@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -307,3 +308,153 @@ body {
   }
 
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+ font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.navbar{
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap:20px;
+    flex-wrap: wrap;
+    
+}
+
+.navbar__logo__title{
+    color: #a435f0;
+    font-size: 35px;
+}
+.navbar__search{
+    border: solid black 1px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+}
+.navbar__search input{
+    border: none;
+    width: 100%;
+    gap: 20px;
+    font-size: 15px;
+}
+.navbar__search input:focus{
+    outline: none;
+}
+
+.navbar__icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.catagories{
+    display:flex;
+    border-bottom:solid black 1px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.catagories p{
+    background-color: #b565ea;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.catagories p:hover{
+    background-color: #bbb8bd;
+    transition: 1s;
+    color: black;
+}
+
+.sale__image img{
+    width:100%;
+}
+
+.recommended{
+    padding: 20px;
+}
+.recommended__container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 10px;
+
+}
+
+.course__card{
+    width: 280px;
+    box-shadow: 2px 2px 8px;
+    padding:5px ;
+    border-radius: 10px;
+}
+
+.course__card img{
+    width:100%;
+    height: 60%;
+}
+
+.topics{
+    padding: 20px;
+}
+
+.topics__cointainer{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics__cointainer p{
+border:solid gray 2px;
+padding: 10px;
+flex-grow: 1;
+flex-basis: 20%;
+}
+
+.popular{
+    padding: 20px;
+}
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.footer{
+    padding:30px;
+    background-color: black;
+    color: white;
+}
+.footer__one{
+    display: flex;
+    gap:10px;
+}
+.footer__one p{
+    margin: 20px;
+}
+.footer__two{
+    margin-left: 20px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+.footer__two h1{
+    color:#a435f0;
+    font-size: 35px;
+}
+>>>>>>> b42853b0574cbef30904b57aa7b37f858cd94c59
